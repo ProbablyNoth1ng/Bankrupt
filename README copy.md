@@ -1,2 +1,0 @@
-# Bankrupt
-bank app
