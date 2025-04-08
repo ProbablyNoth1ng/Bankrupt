@@ -2,26 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Bankrupt</title>
   </head>
-  <body class="bg-black">
+  <body class="min-h-screen flex flex-col">
     <header class="header">
+      <nav class="nav py-5">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 px-4">
+          <div class="logo flex items-center">
+            <img src="./logo.png" alt="logo" class="logo-img mr-2 w-8 h-8" />
+            <p class="font-bold text-2xl">Bankrupt</p>
+          </div>
+          <ul class="links flex flex-wrap justify-center md:justify-start gap-2">
+            <a href="#" class="link text-lg hover:text-yellow-600 hover:font-bold">Personal</a>
+            <a href="#" class="link text-lg hover:text-yellow-600 hover:font-bold">Business</a>
+            <a href="#" class="link text-lg hover:text-yellow-600 hover:font-bold">Wealth</a>
+            <a href="#" class="link text-lg hover:text-yellow-600 hover:font-bold">About Us</a>
+          </ul>
+          <div class="user-entry flex gap-2 flex-wrap justify-center md:justify-end">
+            <button class="text-white bg-black hover:text-black hover:bg-transparent border hover:border-gray-600 px-4 py-2 rounded-2xl">Sign in</button>
+            <button class="text-black bg-transparent hover:text-white hover:bg-black border hover:border-gray-600 px-4 py-2 rounded-2xl">Get Started</button>
+          </div>
+        </div>
+      </nav>
 
-    </header> 
+      <div class="header-banner">
+        <div class="container flex flex-col md:flex-row mx-auto justify-evenly py-10 w-full items-center gap-8 px-4">
+          <div class="text-side w-full md:w-1/2 flex flex-col text-center md:text-left">
+            <h1 class="font-bold text-3xl md:text-4xl pb-3">Banking that puts you first</h1>
+            <p class="text-lg md:text-xl pb-4">
+              Experience seamless banking with Horizon. Manage your finances, make payments, and grow your savings all in one place.
+            </p>
+            <div class="btns flex flex-col sm:flex-row gap-2 justify-center md:justify-start">
+              <button class="text-white bg-black hover:text-black hover:bg-transparent border hover:border-gray-600 px-4 py-2 rounded-2xl">
+                Open an account <i class="fa-solid fa-arrow-right-long pl-1"></i>
+              </button>
+              <button class="text-black bg-white hover:text-white hover:bg-black px-4 py-2 rounded-2xl">Learn More</button>
+            </div>
+          </div>
+          <div class="img-side w-full md:w-1/2">
+            <img src="./f3fccee92e8002cd6f4999530fa2e8cf.png" alt="" class="rounded-xl w-full max-w-md mx-auto" />
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <main class="main ">
-      <h1 class="text-8xl font-bold text-white flex justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
-            Better than FPI 
-      </h1>
+    <main class="main flex-1">
+      <div class="features py-15 px-4">
+        <div class="container mx-auto text-center">
+          <div class="features-top mb-10">
+            <div class="inline-flex px-5 py-2 bg-slate-400 rounded-2xl mb-4">Features</div>
+            <h2 class="font-bold text-3xl md:text-4xl pb-1">Everything you need in one place</h2>
+            <p class="text-gray-400 text-lg">
+              Our platform provides all the tools you need to manage your finances effectively.
+            </p>
+          </div>
+
+          <div class="blocks grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-10">
+            <div class="block max-w-xs text-center">
+                <i class="fa-regular fa-credit-card text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Smart Cards</h3>
+                <p class="text-gray-400">
+                    Control your cards, set limits, and get real-time notifications for all transactions.
+                </p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-chart-column text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Financial Insights</h3>
+                <p class="text-gray-400">
+                    Track your spending patterns and get personalized recommendations to improve your finances.
+                </p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-piggy-bank text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Savings Goals</h3>
+                <p class="text-gray-400">
+                    Set savings goals and watch your money grow with competitive interest rates.
+                </p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-paper-plane text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Instant Transfers</h3>
+                <p class="text-gray-400">Send money instantly to friends, family, or businesses—anytime, anywhere.</p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-globe text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Multi-Currency</h3>
+                <p class="text-gray-400">Hold, convert, and spend in multiple currencies with zero hidden fees.</p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-chart-line text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Investment Hub</h3>
+                <p class="text-gray-400">Start investing in stocks and ETFs with zero commissions and live data.</p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-hourglass-half text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">24/7 Support</h3>
+                <p class="text-gray-400">Talk to a real person any time through live chat or phone—day or night, holidays included.</p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-bolt text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Instant Loans</h3>
+                <p class="text-gray-400">Apply and receive small personal loans instantly—no paperwork, no delays.</p>
+            </div>
+            <div class="block max-w-xs text-center">
+                <i class="fa-solid fa-gift text-4xl pb-2"></i>
+                <h3 class="text-xl pb-1">Reward System</h3>
+                <p class="text-gray-400">Earn cashback and perks for purchases, referrals, or hitting savings goals.</p>
+            </div>
+        </div>
+        
+        </div>
+      </div>
     </main>
-    
-    <footer class="footer">
 
+    <footer class="footer py-5 ">
+      <div class="container flex flex-col md:flex-row justify-between items-center gap-4 px-4 mx-auto">
+        <div class="logo flex items-center">
+          <img src="./logo.png" alt="logo" class="logo-img mr-2 w-8 h-8" />
+          <p class="font-bold text-2xl">Bankrupt</p>
+        </div>
+        <p class="text-center md:text-left">© 2025 Bankrupt Bank. All rights reserved.</p>
+        <div class="footer-links flex gap-4">
+          <a href="#" class="">Terms</a>
+          <a href="#" class="">Privacy</a>
+          <a href="#" class="">Contact</a>
+        </div>
+      </div>
     </footer>
-     
+
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://kit.fontawesome.com/f12a45434c.js" crossorigin="anonymous"></script>
   </body>
 </html>

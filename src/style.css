@@ -2,3 +2,13 @@
 body, html{
   box-sizing: border-box;
 }
+.header-banner{
+  background-color: #DAD9E5;
+}
+.block{
+  max-width: 400px;
+}
+.footer{
+  border-top: 1px solid black;
+
+}
